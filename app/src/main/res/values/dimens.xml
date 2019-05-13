@@ -1,0 +1,30 @@
+<resources>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_countdown">36sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_code_20">20sp</dimen>
+    <dimen name="text_code_32">32sp</dimen>
+    <dimen name="text_code_30">30sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_50">50sp</dimen>
+    <dimen name="text_size_60">60sp</dimen>
+    <dimen name="text_size_72">72sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_dialog">48sp</dimen>
+    <dimen name="success_width">45dp</dimen>
+    <dimen name="detect_out">2dp</dimen>
+    <dimen name="preview_margin">50dp</dimen>
+    <dimen name="preview_land_margin">20dp</dimen>
+    <dimen name="head_width">200dp</dimen>
+    <dimen name="face_margin">100dp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_30">30sp</dimen>
+    <dimen name="textSize_40">40sp</dimen>
+    <dimen name="textSize_48">48sp</dimen>
+    <dimen name="textSize_80">80sp</dimen>
+    <dimen name="textSize_90">90sp</dimen>
+    <dimen name="textSize_110">110sp</dimen>
+    <dimen name="text_code">22sp</dimen>"
+</resources>

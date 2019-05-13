@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lkkdesign.buwei.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_margin="@dimen/preview_land_margin"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="162dp"
+            android:layout_height="79dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/iv_return" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="上货管理"
+            android:textColor="@color/textColor_dialog"
+            android:textSize="@dimen/textSize_80" />
+        <ImageView
+            android:layout_width="162dp"
+            android:layout_height="79dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="@drawable/iv_return" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第一货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="选择商品名称"
+                    android:textSize="@dimen/text_code_20" />
+
+                <Button
+                    android:id="@+id/btn_sel_name1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="选择商品数量"
+                    android:textSize="@dimen/text_code_20" />
+
+                <Button
+                    android:id="@+id/btn_sel_num1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第二货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="选择商品名称"
+                    android:textSize="@dimen/text_code_20"/>
+
+                <Button
+                    android:id="@+id/btn_sel_name2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="选择商品数量"
+                    android:textSize="@dimen/text_code_20"/>
+
+                <Button
+                    android:id="@+id/btn_sel_num2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第三货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第四货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第五货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第六货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第七货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第八货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第九货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:gravity="center"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十一货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十二货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十三货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十四货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十五货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十六货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十七货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十八货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第十九货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="第二十货道："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_24" />
+
+                <TextView
+                    android:id="@+id/tv_show_name20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品名称" />
+
+                <Button
+                    android:id="@+id/btn_sel_name20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:id="@+id/tv_show_num20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_code_20"
+                    android:text="选择商品数量" />
+
+                <Button
+                    android:id="@+id/btn_sel_num20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择"
+                    android:background="@drawable/shape"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/preview_land_margin"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_ensure_exgoods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/face_margin"
+            android:layout_marginRight="@dimen/face_margin"
+            android:background="@drawable/btn_corne_green"
+            android:text="同步货道商品到后台"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_code"
+            android:layout_gravity="bottom"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/face_margin"
+            android:layout_marginRight="@dimen/face_margin"
+            android:background="@drawable/border_button"
+            android:text="取消同步，返回上一层"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_code"
+            android:layout_gravity="bottom"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

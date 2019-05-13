@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="基本设置">
+
+        <EditTextPreference android:key="machineId"
+            android:title="设备编号"
+            android:numeric="integer"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="串口设置">
+        <ListPreference
+            android:key="list_1"
+            android:title="主控板"
+            android:dialogTitle="选择主控板串口波特率"
+            android:entries="@array/set_baudrates_name"
+            android:entryValues="@array/set_baudrates_value" >
+        </ListPreference>
+        <ListPreference
+            android:key="list_2"
+            android:title="扫码"
+            android:dialogTitle="选择扫码串口波特率"
+            android:entries="@array/set_baudrates_name"
+            android:entryValues="@array/set_baudrates_value" >
+        </ListPreference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="商品设置">
+        <Preference
+            android:key="addGoods"
+            android:icon="@mipmap/icon_open"
+            android:title="补货">
+        </Preference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于">
+        <Preference
+            android:key="checkupdate"
+            android:title="检查更新"></Preference>
+        <Preference
+            android:key="copyright"
+            android:title="版权声明"></Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="">
+        <Preference
+            android:key="exitapp"
+            android:title="退出程序"
+            android:layout="@layout/activity_exit"/>
+    </PreferenceCategory>
+</PreferenceScreen>

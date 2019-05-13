@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp">
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_button"
+        android:onClick="doExit"
+        android:text="退出程序"
+        android:textSize="@dimen/text_code"
+        android:textColor="@color/red"/>
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="60dp"
+        android:background="@drawable/border_button"
+        android:onClick="doReturn"
+        android:text="返回主界面"
+        android:textColor="@color/logo"
+        android:textSize="@dimen/text_code"/>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="portName">
+        <item>ttyS0</item>
+        <item>ttyS1</item>
+        <item>ttyS2</item>
+        <item>ttyS3</item>
+    </string-array>
+
+    <string-array name="baudRate">
+        <item>115200</item>
+        <item>9600</item>
+        <item>4800</item>
+        <item>2400</item>
+    </string-array>
+
+    <string-array name="set_baudrates_name">
+        <item>50</item>
+        <item>75</item>
+        <item>110</item>
+        <item>134</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+        <item>500000</item>
+        <item>576000</item>
+        <item>921600</item>
+        <item>1000000</item>
+        <item>1152000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>2500000</item>
+        <item>3000000</item>
+        <item>3500000</item>
+        <item>4000000</item>
+    </string-array>
+
+    <string-array name="set_baudrates_value">
+        <item>50</item>
+        <item>75</item>
+        <item>110</item>
+        <item>134</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+        <item>500000</item>
+        <item>576000</item>
+        <item>921600</item>
+        <item>1000000</item>
+        <item>1152000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>2500000</item>
+        <item>3000000</item>
+        <item>3500000</item>
+        <item>4000000</item>
+    </string-array>
+    <string-array name="countdown_time_value">
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="countdown_time_key">
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+
+    <string-array name="addgoodsnum">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="spinner_goodsname">
+        <item>红茶</item>
+        <item>绿茶</item>
+        <item>乌龙茶</item>
+    </string-array>
+</resources>

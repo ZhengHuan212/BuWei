@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+       <Button
+           android:id="@+id/btn_setting"
+           android:layout_width="300dp"
+           android:layout_height="200dp"
+           android:layout_gravity="right"
+           android:background="#00ffffff"
+           android:onClick="onClickSetting"/>
+
+    </com.pili.pldroid.player.widget.PLVideoView>
+
+
+
+</FrameLayout>
